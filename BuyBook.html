@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./Stylesheet/style.css"/>
+    <link rel="stylesheet" href="./Stylesheet/buystyle.css"/>
+    <style>
+        table,th,td{
+        border-style: none;
+        
+        }
+       img:hover+.dropdown-content{
+        visibility: visible;
+       } 
+    </style>
 </head>
-<body style="background-color:#A5DD9B">
-    <h1>Buy Online</h1>
-    <div style="display: grid; " >
-    <label >Enter Name of Book</label>
-    <input class="boxStyle" type="text"/></br>
-    <label >Number Of Books</label>
-    <input id="mail" style="margin:10px" type="text"></br>
+<body  style="background-color:#A5DD9B">
+    <div class="grid-container">
+   
+    <h1 >Buy Online</h1>
     
-    <button style="height: 50px;width:120px;background-color: #D37676;" >Submit</button>
+    <form>
+    <table>
+        <tr>
+            <td>
+    <label >Enter Name of Book</label></td>
+    <td>
+    <input   type="text"/></td></tr>
+    <tr>
+        <td>
+    <label >Number Of Books</label></td>
+    <!-- <div style="display:inline;margin: 0;"> -->
+        <td>
+            
+    <input   type="text"/><td><div  class="dropdown"><img  src="./images/info.png"><span class="dropdown-content">please enter no. of copies needed.</span></div></td>
+    </td></tr>
+</table>
+
+    <button  >Submit</button>
+</form>
+<div style="display: flex;flex-direction: column;flex-wrap: wrap;">
+<p>fghjkl</p>
+<p>asdfg</p>
 </div>
+</div>
+
     
 </body>
 </html>
